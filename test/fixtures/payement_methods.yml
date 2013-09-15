@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: Transport
+  title: Cash
 
 two:
-  title: Housing
+  title: Credit Card

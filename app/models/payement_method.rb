@@ -1,4 +1,4 @@
-class Category < ActiveRecord::Base
+class PayementMethod < ActiveRecord::Base
 
 	validates :title, uniqueness: true, presence: true
 
