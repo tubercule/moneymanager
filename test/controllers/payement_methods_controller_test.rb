@@ -21,7 +21,7 @@ class PayementMethodsControllerTest < ActionController::TestCase
 
   test "should create payement_method" do
     assert_difference('PayementMethod.count') do
-      post :create, @update
+      post :create, payement_method: @update
     end
 
     assert_redirected_to payement_method_path(assigns(:payement_method))
@@ -38,7 +38,7 @@ class PayementMethodsControllerTest < ActionController::TestCase
   end
 
   test "should update payement_method" do
-    patch :update, id: @payement_method, @update
+    patch :update, id: @payement_method, payement_method: @update
     assert_redirected_to payement_method_path(assigns(:payement_method))
   end
 

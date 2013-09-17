@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  buying_date: 2013-09-17
+  paying_date: 2013-09-17
+  category_id: 1
+  beneficiary_id: 1
+  payement_method_id: 1
+
+two:
+  title: MyString
+  buying_date: 2013-09-17
+  paying_date: 2013-09-17
+  category_id: 1
+  beneficiary_id: 1
+  payement_method_id: 1
