@@ -21,9 +21,9 @@
         <td><%= expense.title %></td>
         <td><%= expense.buying_date %></td>
         <td><%= expense.paying_date %></td>
-        <td><%= expense.category_id %></td>
-        <td><%= expense.beneficiary_id %></td>
-        <td><%= expense.payement_method_id %></td>
+        <td><%= Category.find(expense.category_id).title %></td>
+        <td><%= Beneficiary.find(expense.beneficiary_id).title %></td>
+        <td><%= PayementMethod.find(expense.payement_method_id).title %></td>
         <td><%= link_to 'Show', expense %></td>
         <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
         <td><%= link_to 'Destroy', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>

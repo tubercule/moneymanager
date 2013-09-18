@@ -17,17 +17,17 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @expense.category_id %>
+  <%= Category.find(@expense.category_id).title %>
 </p>
 
 <p>
   <strong>Beneficiary:</strong>
-  <%= @expense.beneficiary_id %>
+  <%= Beneficiary.find(@expense.beneficiary_id).title %>
 </p>
 
 <p>
   <strong>Payement method:</strong>
-  <%= @expense.payement_method_id %>
+  <%= PayementMethod.find(@expense.payement_method_id).title %>
 </p>
 
 <%= link_to 'Edit', edit_expense_path(@expense) %> |
