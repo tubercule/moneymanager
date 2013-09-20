@@ -6,7 +6,8 @@ class CreateExpenses < ActiveRecord::Migration
       t.date :paying_date
       t.integer :category_id
       t.integer :beneficiary_id
-      t.integer :payement_method_id
+      t.integer :payment_method_id
+      t.integer	:value
 
       t.timestamps
     end

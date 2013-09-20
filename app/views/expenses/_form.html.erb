@@ -32,8 +32,12 @@
     <%= f.collection_select(:beneficiary_id, Beneficiary.all, :id, :title) %>
   </div>
   <div class="field">
-    <%= f.label :payement_method_id %><br>
-    <%= f.collection_select(:payement_method_id, PayementMethod.all, :id, :title) %>
+    <%= f.label :payment_method_id %><br>
+    <%= f.collection_select(:payment_method_id, PaymentMethod.all, :id, :title) %>
+  </div>
+  <div class="field">
+  	<%= f.label :value%> in cents<br>
+  	<%= f.text_field :value %>
   </div>
   <div class="actions">
     <%= f.submit %>

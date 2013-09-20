@@ -26,9 +26,13 @@
 </p>
 
 <p>
-  <strong>Payement method:</strong>
-  <%= PayementMethod.find(@expense.payement_method_id).title %>
+  <strong>Payment method:</strong>
+  <%= PaymentMethod.find(@expense.payment_method_id).title %>
 </p>
 
+<p>
+	<strong>Value:</strong>
+	<%= number_to_currency((@expense.value / 100.0)) %>
+</p>
 <%= link_to 'Edit', edit_expense_path(@expense) %> |
 <%= link_to 'Back', expenses_path %>

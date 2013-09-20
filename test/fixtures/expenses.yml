@@ -6,12 +6,14 @@ one:
   paying_date: 2013-09-17
   category_id: 1
   beneficiary_id: 1
-  payement_method_id: 1
+  payment_method_id: 1
+  value: 6942
 
 two:
-  title: MyString
+  title: Courses
   buying_date: 2013-09-17
   paying_date: 2013-09-17
   category_id: 1
   beneficiary_id: 1
-  payement_method_id: 1
+  payment_method_id: 1
+  value: 4269

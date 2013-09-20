@@ -1,4 +1,4 @@
-class PayementMethod < ActiveRecord::Base
+class PaymentMethod < ActiveRecord::Base
 	
 	has_many :expenses
 	before_destroy :ensure_not_referenced_by_any_expense

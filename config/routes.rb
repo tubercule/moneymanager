@@ -1,7 +1,7 @@
 Moneymanager::Application.routes.draw do
   resources :expenses
 
-  resources :payement_methods
+  resources :payment_methods
 
   resources :beneficiaries
 

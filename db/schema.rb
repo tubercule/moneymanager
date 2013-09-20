@@ -31,12 +31,13 @@ ActiveRecord::Schema.define(version: 20130917000713) do
     t.date     "paying_date"
     t.integer  "category_id"
     t.integer  "beneficiary_id"
-    t.integer  "payement_method_id"
+    t.integer  "payment_method_id"
+    t.integer  "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "payement_methods", force: true do |t|
+  create_table "payment_methods", force: true do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"

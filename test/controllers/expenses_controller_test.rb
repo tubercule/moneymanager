@@ -19,7 +19,7 @@ class ExpensesControllerTest < ActionController::TestCase
 
   test "should create expense" do
     assert_difference('Expense.count') do
-      post :create, expense: { beneficiary_id: @expense.beneficiary_id, buying_date: @expense.buying_date, category_id: @expense.category_id, payement_method_id: @expense.payement_method_id, paying_date: @expense.paying_date, title: @expense.title }
+      post :create, expense: { beneficiary_id: @expense.beneficiary_id, buying_date: @expense.buying_date, category_id: @expense.category_id, payment_method_id: @expense.payment_method_id, paying_date: @expense.paying_date, title: @expense.title, value: @expense.value }
     end
 
     assert_redirected_to expense_path(assigns(:expense))
@@ -36,7 +36,7 @@ class ExpensesControllerTest < ActionController::TestCase
   end
 
   test "should update expense" do
-    patch :update, id: @expense, expense: { beneficiary_id: @expense.beneficiary_id, buying_date: @expense.buying_date, category_id: @expense.category_id, payement_method_id: @expense.payement_method_id, paying_date: @expense.paying_date, title: @expense.title }
+    patch :update, id: @expense, expense: { beneficiary_id: @expense.beneficiary_id, buying_date: @expense.buying_date, category_id: @expense.category_id, payment_method_id: @expense.payment_method_id, paying_date: @expense.paying_date, title: @expense.title }
     assert_redirected_to expense_path(assigns(:expense))
   end
 

@@ -8,7 +8,8 @@
       <th>Paying date</th>
       <th>Category</th>
       <th>Beneficiary</th>
-      <th>Payement method</th>
+      <th>Payment method</th>
+			<th>Value</th>
       <th></th>
       <th></th>
       <th></th>
@@ -23,7 +24,8 @@
         <td><%= expense.paying_date %></td>
         <td><%= Category.find(expense.category_id).title %></td>
         <td><%= Beneficiary.find(expense.beneficiary_id).title %></td>
-        <td><%= PayementMethod.find(expense.payement_method_id).title %></td>
+        <td><%= PaymentMethod.find(expense.payment_method_id).title %></td>
+        <td><%= number_to_currency(expense.value / 100.0) %></td>
         <td><%= link_to 'Show', expense %></td>
         <td><%= link_to 'Edit', edit_expense_path(expense) %></td>
         <td><%= link_to 'Destroy', expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>

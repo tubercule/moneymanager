@@ -2,7 +2,7 @@ require 'test_helper'
 
 class BeneficiariesControllerTest < ActionController::TestCase
   setup do
-    @beneficiary = beneficiaries(:one)
+    @beneficiary = beneficiaries(:two)
     @update = {
     						title: 'Lorem Ipsum'
     }
